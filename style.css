@@ -1,0 +1,35 @@
+body {
+  background: #fdfdfd;
+}
+.container {
+  width: 99vw;
+  height: 90vh;
+  position: relative;
+}
+img {
+  position: absolute;
+  animation-name: conan;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes conan {
+  0% {
+    left: 0;
+    transform: scaleX(1);
+  }
+
+  50% {
+    left: 82vw;
+    transform: scaleX(1);
+  }
+  51% {
+    left: 82vw;
+    transform: scaleX(-1);
+  }
+
+  100% {
+    left: 0;
+    transform: scaleX(-1);
+  }
+}
